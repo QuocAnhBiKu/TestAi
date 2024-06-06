@@ -6,10 +6,11 @@ form.addEventListener('submit', async (event) => {
 
   const query = document.getElementById('username').value;
 
+  const api = 'http://localhost:5000/api/v1'
   try {
     resultParagraph.textContent = 'Loading...';
 
-    const response = await fetch('http://localhost:5000/api/v1/ask', {
+    const response = await fetch(`${api}/ask`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
