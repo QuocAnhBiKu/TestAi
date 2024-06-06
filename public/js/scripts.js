@@ -6,7 +6,7 @@ form.addEventListener('submit', async (event) => {
 
   const query = document.getElementById('username').value;
 
-  const api = 'http://localhost:5000/api/v1'
+  const api = 'https://us-central1-testai3.cloudfunctions.net/app/api/v1'
   try {
     resultParagraph.textContent = 'Loading...';
 
